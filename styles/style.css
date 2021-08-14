@@ -1,0 +1,245 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  color: #444;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h1::first-letter {
+  margin-right: 10px;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+li {
+  font-size: 20px;
+}
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+/* best practice: in real project, use class instead of using id to prepare for the future
+we dont need to come back and update id to class when we need to reuse */
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border: 5px solid #1098ad;
+  padding: 50px 0;
+  width: 500px;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+/* best practice:  nth-child, first-child, last-child,... work best for 
+the element contains all the same tag such as ul, ol, table, tr, td, ...*/
+li:nth-child(even) {
+  color: red;
+}
+
+/* warning: this style works for <p> inside article and
+ that element must be the first element of article */
+/* Misconception: it wont work */
+article p:first-child {
+  color: red;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+/* best practice: When styling <a>, it should be :link since 
+we dont want to style <a></a> (not actual link) */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orange;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+/* LVHA */
+
+#copyright {
+  color: red;
+}
+
+.copyright-footer {
+  color: white;
+}
+
+footer p {
+  color: rebeccapurple !important;
+}
+
+.post-header {
+  margin-bottom: 30px;
+}
+
+.post-header h2 {
+  position: relative;
+}
+
+.post-header h2::after {
+  content: "top";
+  background-color: yellow;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  padding: 4px;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+nav a:link {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.btn-like {
+  display: inline-block;
+  padding: 15px;
+  font-size: 20px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* flex */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+}
+
+#author {
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.related-author {
+  margin-bottom: 0px;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.related-link:link {
+  font-style: normal;
+  font-weight: bold;
+}
+
+article {
+  flex-basis: 825px;
+}
+
+.row {
+  display: flex;
+  gap: 25px;
+}
+
+.row aside {
+  flex: 1 0 300px;
+  align-self: flex-start;
+}

@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  margin: 50px auto;
+  width: 825px;
+  position: relative;
+}
+
+.sale {
+  background-color: rgb(185, 38, 38);
+  word-spacing: 10px;
+  display: inline-block;
+  padding: 5px 10px;
+  font-weight: 600;
+  color: white;
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  letter-spacing: 2px;
+}
+
+article {
+  border: 5px solid black;
+}
+
+.product-name {
+  text-align: center;
+  background-color: #f7f7f7;
+  text-transform: uppercase;
+  padding-top: 15px;
+  height: 50px;
+}
+
+.shipping {
+  text-transform: uppercase;
+  color: #444;
+  font-weight: bold;
+  float: right;
+  font-size: 14px;
+  padding-top: 8px;
+  height: 36px;
+}
+
+.more-info:link,
+.more-info:active,
+.more-info:visited {
+  color: black;
+}
+
+.more-info:hover {
+  text-decoration: none;
+}
+ul {
+  list-style: square;
+}
+
+.btn-add-to-cart {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-size: 25px;
+  cursor: pointer;
+  border: none;
+  border-top: 5px solid black;
+  width: 100%;
+  padding: 10px 0;
+  padding-top: 20px;
+  border-radius: 0;
+}
+
+.btn-add-to-cart:hover {
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+  font-size: 25px;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px 0;
+  padding-top: 20px;
+}
+
+.product-price {
+  font-size: x-large;
+  font-weight: bold;
+  float: left;
+  width: 40%;
+}
+li {
+  margin: 5px 30px;
+}
+
+.details-title {
+  text-transform: uppercase;
+  color: #444;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.color-choice div {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.black {
+  background-color: black;
+}
+.blue {
+  background-color: rgb(0, 132, 255);
+}
+.red {
+  background-color: rgb(255, 0, 43);
+}
+.orange {
+  background-color: rgb(255, 208, 0);
+}
+.green {
+  background-color: rgb(47, 255, 82);
+}
+.brown {
+  background-color: rgb(165, 56, 42);
+}
+
+.product-img {
+  float: left;
+  margin-right: 50px;
+  width: 240px;
+}
+.product-description {
+  float: left;
+  width: 245px;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.product-details {
+  margin: 10px 0;
+  margin-bottom: 20px;
+  float: right;
+  width: 240px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}

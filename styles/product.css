@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -16,7 +15,7 @@ body {
   position: relative;
 }
 
-.sale {
+.sale{
   background-color: rgb(185, 38, 38);
   word-spacing: 10px;
   display: inline-block;
@@ -39,16 +38,14 @@ article {
   text-transform: uppercase;
   padding-top: 15px;
   height: 50px;
+  
 }
 
 .shipping {
   text-transform: uppercase;
   color: #444;
   font-weight: bold;
-  float: right;
-  font-size: 14px;
-  padding-top: 8px;
-  height: 36px;
+  margin-bottom: 20px;
 }
 
 .more-info:link,
@@ -92,8 +89,6 @@ ul {
 .product-price {
   font-size: x-large;
   font-weight: bold;
-  float: left;
-  width: 40%;
 }
 li {
   margin: 5px 30px;
@@ -104,6 +99,15 @@ li {
   color: #444;
   font-weight: bold;
   margin-top: 10px;
+}
+
+.product-details {
+  margin: 10px 0;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
 }
 
 .color-choice div {
@@ -133,27 +137,3 @@ li {
   background-color: rgb(165, 56, 42);
 }
 
-.product-img {
-  float: left;
-  margin-right: 50px;
-  width: 240px;
-}
-.product-description {
-  float: left;
-  width: 245px;
-  padding-top: 10px;
-  margin-top: 10px;
-}
-
-.product-details {
-  margin: 10px 0;
-  margin-bottom: 20px;
-  float: right;
-  width: 240px;
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: block;
-}

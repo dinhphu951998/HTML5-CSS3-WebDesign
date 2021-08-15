@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-family: "Rubik", sans-serif;
+        color: #343a40;
+        font-size: 24px;
+      }
+
+      body {
+        display: grid;
+        grid-template-columns: 80px 400px 1fr 250px;
+        grid-template-rows: 80px 1fr;
+        height: 100vh;
+
+        text-align: center;
+        font-weight: bold;
+      }
+
+      nav,
+      menu,
+      section,
+      main,
+      aside {
+        padding: 16px;
+      }
+
+      nav {
+        background-color: #343a40;
+        grid-row: 1/-1;
+        color: white;
+      }
+      menu {
+        background-color: #7048e8;
+        grid-column: 2/-1;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      section {
+        background-color: #e9ecef;
+
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        overflow: scroll;
+      }
+
+      aside {
+        background-color: #e9ecef;
+      }
+
+      .trash {
+        color: white;
+        background-color: #c92a2a;
+      }
+      .btn {
+        border: none;
+        padding: 8px 12px;
+        color: white;
+        font-weight: bold;
+
+        cursor: pointer;
+      }
+      .action {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+      }
+
+      .action .btn {
+        background-color: #5f3dc4;
+      }
+
+      .email {
+        background-color: #ced4da;
+        height: 100px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>Nav</nav>
+    <menu>
+      <div class="action">
+        <button class="btn new">New</button>
+        <button class="btn reply">Reply</button>
+        <button class="btn forward">Forward</button>
+        <button class="btn mark-unread">Mark unread</button>
+      </div>
+      <button class="btn trash">Trash</button>
+    </menu>
+    <section>
+      <div class="email">Email 1</div>
+      <div class="email">Email 2</div>
+      <div class="email">Email 3</div>
+      <div class="email">Email 4</div>
+      <div class="email">Email 5</div>
+      <div class="email">Email 6</div>
+      <div class="email">Email 7</div>
+      <div class="email">Email 8</div>
+    </section>
+    <main>Email view</main>
+    <aside>Additional</aside>
+  </body>
+</html>

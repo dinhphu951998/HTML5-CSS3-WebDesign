@@ -274,50 +274,50 @@ body {
 .meal img {
   width: 100%;
 }
-.meal{
-    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-    border-radius: 12px;
-    overflow: hidden;
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 12px;
+  overflow: hidden;
 
-    transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-.meal:hover{
-    transform: translateY(-2rem);
-    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.1);
+.meal:hover {
+  transform: translateY(-2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.1);
 }
 
-.meal-content{
-    padding: 3.2rem;
+.meal-content {
+  padding: 3.2rem;
 }
 
-.meal-tags{
-    margin-bottom: 1.2rem;
+.meal-tags {
+  margin-bottom: 1.2rem;
 
-    display: flex;
-    gap: 9px;
+  display: flex;
+  gap: 9px;
 }
 
-.tag{
-    display: inline-block;
-    padding: 0.4rem 0.8rem;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    color: #333;
-    border-radius: 50px;
-    font-weight: 600;
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 50px;
+  font-weight: 600;
 }
 
-.tag-vegetarian{
-    background-color: #51cf66;
+.tag-vegetarian {
+  background-color: #51cf66;
 }
 
-.tag-vegan{
-    background-color: #74b816;
+.tag-vegan {
+  background-color: #74b816;
 }
 
-.tag-paleo{
-    background-color: #f59f00;
+.tag-paleo {
+  background-color: #f59f00;
 }
 
 .meal-title {
@@ -343,36 +343,97 @@ body {
   align-items: center;
 }
 
-.meal-icon{
-    width: 2.4rem;
-    height: 2.4rem;
-    color: #e67e22;
+.meal-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #e67e22;
 }
 
-.list{
-    list-style: none;
+.list {
+  list-style: none;
 
-    display: flex;
-    flex-direction: column;
-    gap: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
 }
 
+.list-item {
+  font-size: 1.8rem;
 
-.list-item{
-    font-size: 1.8rem;
-
-    display: flex;
-    align-items: center;
-    gap: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
 }
 
-.list-icon{
-    width: 3rem;
-    height: 3rem;
-    color: #e67e22;
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
 }
 
-.all-recipes{
-    font-size: 1.8rem;
-    text-align: center;
+.all-recipes {
+  font-size: 1.8rem;
+  text-align: center;
+}
+/* ********************************* */
+/* TESTIMONIALS */
+/* ********************************* */
+
+.section-testimonials {
+  background-color: #fae5d3;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  align-items: center;
+}
+
+.testimonials-container {
+  padding: 9.6rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 9.6rem;
+
+}
+
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+.testimonial-name {
+  font-size: 1.6rem;
+  color: #666;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+
+  padding: 1.6rem;
+
+}
+
+.gallery figure{
+    overflow: hidden;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+
+  transition: all 0.3s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
 }
